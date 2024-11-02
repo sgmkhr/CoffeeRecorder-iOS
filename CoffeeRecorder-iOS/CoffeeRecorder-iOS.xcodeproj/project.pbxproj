@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		215D4FB42CD5E9C6001DACFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215D4FB32CD5E9C6001DACFC /* AppDelegate.swift */; };
 		215D4FB62CD5E9C6001DACFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215D4FB52CD5E9C6001DACFC /* SceneDelegate.swift */; };
-		215D4FB82CD5E9C6001DACFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215D4FB72CD5E9C6001DACFC /* ViewController.swift */; };
-		215D4FBB2CD5E9C6001DACFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215D4FB92CD5E9C6001DACFC /* Main.storyboard */; };
 		215D4FBD2CD5E9C9001DACFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 215D4FBC2CD5E9C9001DACFC /* Assets.xcassets */; };
 		215D4FC02CD5E9C9001DACFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215D4FBE2CD5E9C9001DACFC /* LaunchScreen.storyboard */; };
+		215D4FCC2CD5EB40001DACFC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215D4FCB2CD5EB40001DACFC /* HomeVC.swift */; };
+		215D4FCE2CD5EB50001DACFC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215D4FCD2CD5EB50001DACFC /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		215D4FB02CD5E9C6001DACFC /* CoffeeRecorder-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoffeeRecorder-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		215D4FB32CD5E9C6001DACFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		215D4FB52CD5E9C6001DACFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		215D4FB72CD5E9C6001DACFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		215D4FBA2CD5E9C6001DACFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		215D4FBC2CD5E9C9001DACFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		215D4FBF2CD5E9C9001DACFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		215D4FC12CD5E9C9001DACFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		215D4FCB2CD5EB40001DACFC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		215D4FCD2CD5EB50001DACFC /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,47 @@
 		215D4FB22CD5E9C6001DACFC /* CoffeeRecorder-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				215D4FB32CD5E9C6001DACFC /* AppDelegate.swift */,
-				215D4FB52CD5E9C6001DACFC /* SceneDelegate.swift */,
-				215D4FB72CD5E9C6001DACFC /* ViewController.swift */,
-				215D4FB92CD5E9C6001DACFC /* Main.storyboard */,
-				215D4FBC2CD5E9C9001DACFC /* Assets.xcassets */,
-				215D4FBE2CD5E9C9001DACFC /* LaunchScreen.storyboard */,
+				215D4FC72CD5EAB9001DACFC /* Application */,
+				215D4FC92CD5EAF2001DACFC /* Domain */,
+				215D4FC82CD5EAE5001DACFC /* Presentation */,
 				215D4FC12CD5E9C9001DACFC /* Info.plist */,
 			);
 			path = "CoffeeRecorder-iOS";
+			sourceTree = "<group>";
+		};
+		215D4FC72CD5EAB9001DACFC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				215D4FB32CD5E9C6001DACFC /* AppDelegate.swift */,
+				215D4FB52CD5E9C6001DACFC /* SceneDelegate.swift */,
+				215D4FBC2CD5E9C9001DACFC /* Assets.xcassets */,
+				215D4FBE2CD5E9C9001DACFC /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		215D4FC82CD5EAE5001DACFC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				215D4FCA2CD5EB2A001DACFC /* Home */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		215D4FC92CD5EAF2001DACFC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		215D4FCA2CD5EB2A001DACFC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				215D4FCB2CD5EB40001DACFC /* HomeVC.swift */,
+				215D4FCD2CD5EB50001DACFC /* Home.storyboard */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +157,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				215D4FCE2CD5EB50001DACFC /* Home.storyboard in Resources */,
 				215D4FC02CD5E9C9001DACFC /* LaunchScreen.storyboard in Resources */,
 				215D4FBD2CD5E9C9001DACFC /* Assets.xcassets in Resources */,
-				215D4FBB2CD5E9C6001DACFC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				215D4FB82CD5E9C6001DACFC /* ViewController.swift in Sources */,
+				215D4FCC2CD5EB40001DACFC /* HomeVC.swift in Sources */,
 				215D4FB42CD5E9C6001DACFC /* AppDelegate.swift in Sources */,
 				215D4FB62CD5E9C6001DACFC /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		215D4FB92CD5E9C6001DACFC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				215D4FBA2CD5E9C6001DACFC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		215D4FBE2CD5E9C9001DACFC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +321,6 @@
 				INFOPLIST_FILE = "CoffeeRecorder-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +348,6 @@
 				INFOPLIST_FILE = "CoffeeRecorder-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

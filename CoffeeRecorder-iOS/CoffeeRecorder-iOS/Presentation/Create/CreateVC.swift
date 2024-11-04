@@ -15,6 +15,8 @@ class CreateViewController: UIViewController {
     @IBOutlet weak var rateLabel: UILabel!
     @IBOutlet weak var commentTextField: UITextField!
     
+    var delegate: DataUpdateDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,6 +51,10 @@ class CreateViewController: UIViewController {
         } catch {
             print(error.localizedDescription)
         }
-        Router.shared.showHomeView(from: self)
+        delegate?.updateData(data: newCoffeeRecord)
+        dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
+    
+    
 }

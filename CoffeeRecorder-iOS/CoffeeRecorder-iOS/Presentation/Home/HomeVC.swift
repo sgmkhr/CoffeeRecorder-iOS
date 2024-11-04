@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, DataUpdateDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -53,5 +53,13 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBAction func tappedPlusButton(_ sender: UIBarButtonItem) {
         Router.shared.showCreateView(from: self)
     }
+    
+    func updateData(data: CoffeeRecord) {
+        items.append(data)
+        tableView.reloadData()
+    }
+}
 
+protocol DataUpdateDelegate {
+    func updateData(data: CoffeeRecord)
 }

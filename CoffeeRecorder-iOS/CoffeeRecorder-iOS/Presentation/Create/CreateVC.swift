@@ -10,18 +10,22 @@ import CoreData
 
 class CreateViewController: UIViewController {
     
+    // MARK: - outlet
     @IBOutlet weak var coffeeNameTextField: UITextField!
     @IBOutlet weak var shopNameTextField: UITextField!
     @IBOutlet weak var rateLabel: UILabel!
     @IBOutlet weak var commentTextField: UITextField!
     
+    // MARK: - delegate
     var delegate: DataUpdateDelegate?
     
+    // MARK: - life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
+    // MARK: - Action
     @IBAction func tappedCreateButton(_ sender: UIButton) {
         guard let enteredCoffeeName = coffeeNameTextField.text else { return }
         let enteredShopName = shopNameTextField.text ?? nil
@@ -36,7 +40,7 @@ class CreateViewController: UIViewController {
         rateLabel.text = "\(sender.value)"
     }
     
-    
+    // MARK: - method
     func addNewCoffeeRecordItem(name: String, shopName: String?, rateText: String, comment: String?, createdDate: Date) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext

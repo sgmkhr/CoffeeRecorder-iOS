@@ -12,6 +12,13 @@ final class Router {
     static let shared = Router()
     private init() {}
     
+    /// Home画面に画面遷移
+    internal func showHomeView(from: UIViewController) {
+        guard let toVC = UIStoryboard(name: "Home", bundle: nil)
+            .instantiateInitialViewController() as? HomeViewController else { return }
+        show(from: from, to: toVC)
+    }
+    
     /// Create画面に画面遷移
     internal func showCreateView(from: UIViewController) {
         guard let toVC = UIStoryboard(name: "Create", bundle: nil)

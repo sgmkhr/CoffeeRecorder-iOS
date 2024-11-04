@@ -19,7 +19,7 @@ extension CoffeeRecord {
     @NSManaged public var comment: String?
     @NSManaged public var createdDate: Date?
     @NSManaged public var name: String?
-    @NSManaged public var rate: Float
+    @NSManaged public var rate: Double
     @NSManaged public var shopName: String?
 
 }

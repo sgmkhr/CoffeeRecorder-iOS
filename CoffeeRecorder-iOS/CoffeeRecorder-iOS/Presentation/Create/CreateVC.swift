@@ -6,40 +6,42 @@
 //
 
 import UIKit
+import CoreData
 
 class CreateViewController: UIViewController {
     
     @IBOutlet weak var coffeeNameTextField: UITextField!
-    
     @IBOutlet weak var shopNameTextField: UITextField!
-    
-    @IBOutlet weak var rateSlider: UISlider!
-    
+    @IBOutlet weak var rateLabel: UILabel!
     @IBOutlet weak var commentTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
     }
     
     @IBAction func tappedCreateButton(_ sender: UIButton) {
         guard let enteredCoffeeName = coffeeNameTextField.text else { return }
         let enteredShopName = shopNameTextField.text ?? nil
-        let enteredRate = rateSlider.value
+        let enteredRate = rateLabel.text ?? "2.5"
         let enteredComment = commentTextField.text ?? nil
         let createdDate = Date()
         
-        addNewCoffeeRecordItem(name: enteredCoffeeName, shopName: enteredShopName, rate: enteredRate, comment: enteredComment, createdDate: createdDate)
+        addNewCoffeeRecordItem(name: enteredCoffeeName, shopName: enteredShopName, rateText: enteredRate, comment: enteredComment, createdDate: createdDate)
     }
     
-    func addNewCoffeeRecordItem(name: String, shopName: String?, rate: Float, comment: String?, createdDate: Date) {
+    @IBAction func InputSliderRate(_ sender: UISlider) {
+        rateLabel.text = "\(sender.value)"
+    }
+    
+    
+    func addNewCoffeeRecordItem(name: String, shopName: String?, rateText: String, comment: String?, createdDate: Date) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let newCoffeeRecord = CoffeeRecord(context: context)
         newCoffeeRecord.name = name
         newCoffeeRecord.shopName = shopName
-        newCoffeeRecord.rate = rate
+        newCoffeeRecord.rate = Double(rateText)!
         newCoffeeRecord.comment = comment
         newCoffeeRecord.createdDate = createdDate
         do {
@@ -47,5 +49,6 @@ class CreateViewController: UIViewController {
         } catch {
             print(error.localizedDescription)
         }
+        Router.shared.showHomeView(from: self)
     }
 }

@@ -17,8 +17,9 @@
 		21AB6B392CD89B870018CF00 /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21AB6B382CD89B870018CF00 /* Create.storyboard */; };
 		21AB6B3B2CD89CE30018CF00 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AB6B3A2CD89CE30018CF00 /* Router.swift */; };
 		21E2A7A12CD8A97C00117D93 /* CoffeeRecord.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21E2A79F2CD8A97C00117D93 /* CoffeeRecord.xcdatamodeld */; };
-		21E2A7AD2CD8BC1A00117D93 /* CoffeeRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E2A7AB2CD8BC1A00117D93 /* CoffeeRecord+CoreDataClass.swift */; };
-		21E2A7AE2CD8BC1A00117D93 /* CoffeeRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E2A7AC2CD8BC1A00117D93 /* CoffeeRecord+CoreDataProperties.swift */; };
+		21E2A7B12CD8CB8400117D93 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E2A7B02CD8CB8400117D93 /* Date.swift */; };
+		21E2A7B42CD8D36800117D93 /* CoffeeRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E2A7B22CD8D36800117D93 /* CoffeeRecord+CoreDataClass.swift */; };
+		21E2A7B52CD8D36800117D93 /* CoffeeRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E2A7B32CD8D36800117D93 /* CoffeeRecord+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +36,9 @@
 		21AB6B3A2CD89CE30018CF00 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		21E2A7A02CD8A97C00117D93 /* CoffeeRecord.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoffeeRecord.xcdatamodel; sourceTree = "<group>"; };
 		21E2A7A62CD8AE7300117D93 /* CoffeeRecorder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoffeeRecorder.xcdatamodel; sourceTree = "<group>"; };
-		21E2A7AB2CD8BC1A00117D93 /* CoffeeRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoffeeRecord+CoreDataClass.swift"; sourceTree = "<group>"; };
-		21E2A7AC2CD8BC1A00117D93 /* CoffeeRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoffeeRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		21E2A7B02CD8CB8400117D93 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		21E2A7B22CD8D36800117D93 /* CoffeeRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoffeeRecord+CoreDataClass.swift"; sourceTree = "<group>"; };
+		21E2A7B32CD8D36800117D93 /* CoffeeRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoffeeRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				215D4FC72CD5EAB9001DACFC /* Application */,
 				215D4FC92CD5EAF2001DACFC /* Domain */,
 				215D4FC82CD5EAE5001DACFC /* Presentation */,
+				21E2A7AF2CD8CB6200117D93 /* Utils */,
 				215D4FC12CD5E9C9001DACFC /* Info.plist */,
 			);
 			path = "CoffeeRecorder-iOS";
@@ -127,11 +130,19 @@
 		21E2A79E2CD8A94C00117D93 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				21E2A7AB2CD8BC1A00117D93 /* CoffeeRecord+CoreDataClass.swift */,
-				21E2A7AC2CD8BC1A00117D93 /* CoffeeRecord+CoreDataProperties.swift */,
+				21E2A7B22CD8D36800117D93 /* CoffeeRecord+CoreDataClass.swift */,
+				21E2A7B32CD8D36800117D93 /* CoffeeRecord+CoreDataProperties.swift */,
 				21E2A79F2CD8A97C00117D93 /* CoffeeRecord.xcdatamodeld */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		21E2A7AF2CD8CB6200117D93 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				21E2A7B02CD8CB8400117D93 /* Date.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,11 +219,12 @@
 			files = (
 				215D4FCC2CD5EB40001DACFC /* HomeVC.swift in Sources */,
 				215D4FB42CD5E9C6001DACFC /* AppDelegate.swift in Sources */,
-				21E2A7AE2CD8BC1A00117D93 /* CoffeeRecord+CoreDataProperties.swift in Sources */,
 				21AB6B3B2CD89CE30018CF00 /* Router.swift in Sources */,
 				21AB6B372CD89B760018CF00 /* CreateVC.swift in Sources */,
+				21E2A7B42CD8D36800117D93 /* CoffeeRecord+CoreDataClass.swift in Sources */,
 				21E2A7A12CD8A97C00117D93 /* CoffeeRecord.xcdatamodeld in Sources */,
-				21E2A7AD2CD8BC1A00117D93 /* CoffeeRecord+CoreDataClass.swift in Sources */,
+				21E2A7B52CD8D36800117D93 /* CoffeeRecord+CoreDataProperties.swift in Sources */,
+				21E2A7B12CD8CB8400117D93 /* Date.swift in Sources */,
 				215D4FB62CD5E9C6001DACFC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

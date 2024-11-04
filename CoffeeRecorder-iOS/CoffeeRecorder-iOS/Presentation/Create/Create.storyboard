@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New Coffee Record-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="CreateViewController" customModule="CoffeeRecorder_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nt8-wa-FzN" userLabel="Coffee Name Text Field">
+                                <rect key="frame" x="20" y="210" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ywc-KQ-aRU" userLabel="Shop Name Text Field">
+                                <rect key="frame" x="20" y="335" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S8O-ky-cV7">
+                                <rect key="frame" x="20" y="581" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="10" maximumValueImage="10.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3B0-gu-uVn">
+                                <rect key="frame" x="18" y="460" width="357" height="31"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <imageReference key="minimumValueImage" image="0.circle" catalog="system" variableValue="5.5511151231257827e-17"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kh-1J-SDz">
+                                <rect key="frame" x="20" y="159" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVW-VZ-tUE">
+                                <rect key="frame" x="20" y="284" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jd5-Ou-cBb">
+                                <rect key="frame" x="20" y="409" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFd-RH-grv">
+                                <rect key="frame" x="20" y="530" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ive-hG-Qyl">
+                                <rect key="frame" x="159" y="655" width="75" height="35"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Create"/>
+                                <connections>
+                                    <action selector="tappedCreateButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="46Z-Yq-qIx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ive-hG-Qyl" firstAttribute="top" secondItem="S8O-ky-cV7" secondAttribute="bottom" constant="40" id="1ez-Jl-ovR"/>
+                            <constraint firstItem="Jd5-Ou-cBb" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="2KY-Xl-x02"/>
+                            <constraint firstItem="IVW-VZ-tUE" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="2dS-dv-05g"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Nt8-wa-FzN" secondAttribute="trailing" constant="20" id="2fz-iv-DC5"/>
+                            <constraint firstItem="3Kh-1J-SDz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="2rZ-9n-gON"/>
+                            <constraint firstItem="rFd-RH-grv" firstAttribute="width" secondItem="3Kh-1J-SDz" secondAttribute="width" id="3Pa-KH-Hrb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3Kh-1J-SDz" secondAttribute="trailing" constant="20" id="6Oe-fF-YfY"/>
+                            <constraint firstItem="3B0-gu-uVn" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="9a8-z0-0GP"/>
+                            <constraint firstItem="Jd5-Ou-cBb" firstAttribute="top" secondItem="ywc-KQ-aRU" secondAttribute="bottom" constant="40" id="Aok-f4-f80"/>
+                            <constraint firstItem="3B0-gu-uVn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="CEX-zn-XET"/>
+                            <constraint firstItem="3Kh-1J-SDz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="DCF-xQ-tzT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3B0-gu-uVn" secondAttribute="trailing" constant="20" id="DHQ-tt-iK7"/>
+                            <constraint firstItem="S8O-ky-cV7" firstAttribute="width" secondItem="3Kh-1J-SDz" secondAttribute="width" id="FzQ-7e-b5P"/>
+                            <constraint firstItem="S8O-ky-cV7" firstAttribute="top" secondItem="rFd-RH-grv" secondAttribute="bottom" constant="30" id="IIe-ra-OsW"/>
+                            <constraint firstItem="S8O-ky-cV7" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="IT5-hJ-c6H"/>
+                            <constraint firstItem="ywc-KQ-aRU" firstAttribute="top" secondItem="IVW-VZ-tUE" secondAttribute="bottom" constant="30" id="J3Y-1s-PpL"/>
+                            <constraint firstItem="3B0-gu-uVn" firstAttribute="width" secondItem="3Kh-1J-SDz" secondAttribute="width" id="NFS-df-Kw3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Jd5-Ou-cBb" secondAttribute="trailing" constant="20" id="O80-PF-ObP"/>
+                            <constraint firstItem="rFd-RH-grv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Sc0-6V-WrC"/>
+                            <constraint firstItem="IVW-VZ-tUE" firstAttribute="width" secondItem="3Kh-1J-SDz" secondAttribute="width" id="SyR-b6-EgO"/>
+                            <constraint firstItem="3B0-gu-uVn" firstAttribute="top" secondItem="Jd5-Ou-cBb" secondAttribute="bottom" constant="30" id="TPm-pH-UXD"/>
+                            <constraint firstItem="IVW-VZ-tUE" firstAttribute="top" secondItem="Nt8-wa-FzN" secondAttribute="bottom" constant="40" id="Tg0-UZ-NNq"/>
+                            <constraint firstItem="ive-hG-Qyl" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="UM5-q0-E7X"/>
+                            <constraint firstItem="ywc-KQ-aRU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="VCs-VS-hE3"/>
+                            <constraint firstItem="Nt8-wa-FzN" firstAttribute="top" secondItem="3Kh-1J-SDz" secondAttribute="bottom" constant="30" id="WBU-Fx-gMp"/>
+                            <constraint firstItem="Nt8-wa-FzN" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="WXH-hS-g67"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rFd-RH-grv" secondAttribute="trailing" constant="20" id="XED-KQ-2is"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ywc-KQ-aRU" secondAttribute="trailing" constant="20" id="cBz-aj-PbP"/>
+                            <constraint firstItem="S8O-ky-cV7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="flD-hg-mJa"/>
+                            <constraint firstItem="ywc-KQ-aRU" firstAttribute="width" secondItem="3Kh-1J-SDz" secondAttribute="width" id="hFG-Ob-eiZ"/>
+                            <constraint firstItem="Nt8-wa-FzN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="he7-2e-M4U"/>
+                            <constraint firstItem="IVW-VZ-tUE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="kCD-zK-NMg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="S8O-ky-cV7" secondAttribute="trailing" constant="20" id="kcH-Xw-3h6"/>
+                            <constraint firstItem="Jd5-Ou-cBb" firstAttribute="width" secondItem="3Kh-1J-SDz" secondAttribute="width" id="lWx-Y9-fA0"/>
+                            <constraint firstItem="3Kh-1J-SDz" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="m92-87-ehh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IVW-VZ-tUE" secondAttribute="trailing" constant="20" id="nIg-4E-TwS"/>
+                            <constraint firstItem="rFd-RH-grv" firstAttribute="top" secondItem="3B0-gu-uVn" secondAttribute="bottom" constant="40" id="qgC-nf-QOW"/>
+                            <constraint firstItem="ywc-KQ-aRU" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="qre-A9-HTE"/>
+                            <constraint firstItem="rFd-RH-grv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wey-Cv-4go"/>
+                            <constraint firstItem="Jd5-Ou-cBb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="yCI-bd-HRQ"/>
+                            <constraint firstItem="Nt8-wa-FzN" firstAttribute="width" secondItem="3Kh-1J-SDz" secondAttribute="width" id="zJD-45-kZa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Coffee Record" id="NPU-Ag-3Ww"/>
+                    <connections>
+                        <outlet property="coffeeNameTextField" destination="Nt8-wa-FzN" id="5CF-BI-9ah"/>
+                        <outlet property="commentTextField" destination="S8O-ky-cV7" id="tyx-ZG-0Cf"/>
+                        <outlet property="rateSlider" destination="3B0-gu-uVn" id="ehj-Kw-vgw"/>
+                        <outlet property="shopNameTextField" destination="ywc-KQ-aRU" id="M2p-4I-WBe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="875.57251908396938" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0.circle" catalog="system" width="128" height="123"/>
+        <image name="10.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

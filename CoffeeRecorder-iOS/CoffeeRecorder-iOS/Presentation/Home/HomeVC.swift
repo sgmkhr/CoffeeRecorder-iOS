@@ -13,4 +13,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    @IBAction func tappedCreateButton(_ sender: UIButton) {
+        Router.shared.showCreateView(from: self)
+    }
 }
